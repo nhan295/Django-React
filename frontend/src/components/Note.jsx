@@ -17,7 +17,7 @@ function Note({ note, onDelete }) {
                 Delete
             </button>
 
-            <button onClick={() => navigate(`/edit/${note.id}`)}>Edit</button>
+            <button className="edit-button"onClick={() => navigate(`/edit/${note.id}`)}>Edit</button>
 
         </div>
     );
