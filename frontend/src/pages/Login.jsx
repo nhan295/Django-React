@@ -53,7 +53,7 @@ function Login() {
             <p style={{ marginTop: "1rem" }}>
                 Don't have an account?{" "}
                 <Link to="/register">
-                    Login
+                    Register
                 </Link>
             </p>
 

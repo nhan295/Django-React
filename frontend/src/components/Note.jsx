@@ -6,7 +6,7 @@ function Note({ note, onDelete }) {
     const navigate = useNavigate();
     const formattedDate = new Date(note.created_at).toLocaleDateString("en-US")
     const handleEdit = ()=>{
-        navigate('/edit')
+        navigate(`/edit/${note.id}`);
     }
     return (
         <div className="note-container" key={note.id}>
@@ -17,7 +17,7 @@ function Note({ note, onDelete }) {
                 Delete
             </button>
 
-            <button className="edit-button"onClick={() => navigate(`/edit/${note.id}`)}>Edit</button>
+            <button className="edit-button"onClick={handleEdit}>Edit</button>
 
         </div>
     );

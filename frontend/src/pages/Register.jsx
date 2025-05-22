@@ -53,7 +53,7 @@ function Register() {
             <p style={{ marginTop: "1rem" }}>
                 Already have an account?{" "}
                 <Link to="/login">
-                    Register
+                    Login
                 </Link>
             </p>
 
