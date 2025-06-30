@@ -10,7 +10,9 @@ function EditNote() {
     api
       .get(`/api/notes/edit/${id}/`)
       .then((res) => setNote(res.data))
-      .catch((err) => alert("Không thể tải ghi chú"));
+      .catch((err)=>{
+            console.error('Không thể tải ghi chứ',err)
+        });
   }, [id]);
 
   const handleChange = (e) => {
